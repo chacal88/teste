@@ -1,0 +1,11 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Home</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <button ion-button clear block (click)="navigateAboutPage()">About</button>
+    <menu-list></menu-list>
+    <w-home-page-default [pages]="pages"></w-home-page-default>
+</ion-content>

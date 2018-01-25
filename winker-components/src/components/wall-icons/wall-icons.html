@@ -1,0 +1,21 @@
+<div class="w-wall-icons">
+    <ion-row>
+        <ion-col col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 *ngFor="let item of items">
+            <ion-card class="wall-opt" [ngStyle]="{background: item.color}">
+                <ion-card-content>
+                    <div style="text-align: center; padding-top: 20px">
+                        <ion-icon name="{{item.icon}}" style="font-size: 72px; color:#fff;"></ion-icon>
+                    </div>
+                </ion-card-content>
+                <ion-row>
+                    <ion-col>
+                        <button ion-button icon-left clear small>
+                            <ion-icon name="{{item.icon}}" style="color: #fff"></ion-icon>
+                            <div style="color: #fff" text-wrap>{{item.title}}</div>
+                        </button>
+                    </ion-col>
+                </ion-row>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+</div>

@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+
+  my-app:
+    image: winker-ionic-3
+    container_name: app-ionic3
+    privileged: true
+    volumes:
+      - ../apps/portal/:/myApp:z
+      - ../winker-components/:/winker-components:z
+      - ~/.gradle:/root/.gradle
+      - /dev/bus/usb:/dev/bus/usb
+    tty: true
+    stdin_open: true
